@@ -1,0 +1,11 @@
+<% provide(:title, (t ".title")) %>
+<h1><%= t ".head" %></h1>
+<p>
+  <%= t(".sentence1",
+    book_title: link_to(t(".book_title"), "http://www.railstutorial.org"),
+    book: link_to(t(".book"), "http://www.railstutorial.org/book"),
+    screencast_series: link_to(t(".screencast_series"), "http://screencasts.railstutorial.org/"),
+    ror: link_to(t(".ror"), "http://rubyonrails.org")).html_safe
+  %>
+  <%= t ".sentence2" %>
+</p>
