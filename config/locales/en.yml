@@ -31,8 +31,8 @@
 
 en:
   hello: "Hello world"
-  layouts:
-    application:
+  helpers:
+    application_helper:
       title: "Ruby on Rails Tutorial Sample App"
   static_pages:
     home:
