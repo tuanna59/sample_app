@@ -1,0 +1,15 @@
+<footer class="footer">
+  <small>
+    <%= t(".sentence1",
+      book_title: (link_to (t "book_title"), "http://www.railstutorial.org"),
+      author: (link_to (t "author"), "http://www.michaelhartl.com")
+    ).html_safe %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to (t ".about_title"), about_path %></li>
+      <li><%= link_to (t ".contact_title"), contact_path %></li>
+      <li><a href="http://news.railstutorial.org/"><%= t ".news" %></a></li>
+    </ul>
+  </nav>
+</footer>
