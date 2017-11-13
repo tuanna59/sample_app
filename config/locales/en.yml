@@ -31,15 +31,29 @@
 
 en:
   hello: "Hello world"
+  book_title: "Ruby on Rails Tutorial"
+  author: "Michael Hartl"
+  layouts:
+    header:
+      home_title: "Home"
+      help_title: "Help"
+      login_title: "Login"
+    footer:
+      about_title: "About"
+      contact_title: "Contact"
+      news: "News"
+      sentence1: The %{book_title} by %{author}
   helpers:
     application_helper:
       title: "Ruby on Rails Tutorial Sample App"
   static_pages:
     home:
       title: "Home"
-      head: "Sample App"
+      head: "Welcome to the Sample App"
       sentence1: "This is the homepage for the"
       book_title: "Ruby on Rails Tutorial"
+      content1: "sample application."
+      signup: "Sign up now!"
     contact:
       title: "Contact"
       head: "Contact"
@@ -63,3 +77,8 @@ en:
       screencast_series: "screencast series"
       ror: "Ruby on Rails"
       sentence2: "This is the sample application for the tutorial."
+  users:
+    new:
+      title: "Sign up"
+      head: "Sign up"
+      sentence1: "This will be a signup page for new users."
