@@ -2,6 +2,8 @@ source "https://rubygems.org"
 
 gem "rubocop",      "~> 0.51.0", require: false
 gem "rails",        "~> 5.1.4"
+gem "config"
+gem "bcrypt",       "3.1.11"
 gem "bootstrap-sass", "3.3.7"
 gem "puma",         "3.9.1"
 gem "sass-rails",   "5.0.6"
