@@ -33,11 +33,18 @@ en:
   hello: "Hello world"
   book_title: "Ruby on Rails Tutorial"
   author: "Michael Hartl"
+  login: "Login"
+  logout: "Logout"
+  signup: "Sign up now!"
   layouts:
     header:
+      app_title: "sample app"
       home_title: "Home"
       help_title: "Help"
-      login_title: "Login"
+      profile: "Profile"
+      setting: "Settings"
+      users: "Users"
+      account: "Account"
     footer:
       about_title: "About"
       contact_title: "Contact"
@@ -51,9 +58,11 @@ en:
     application_helper:
       title: "Ruby on Rails Tutorial Sample App"
   controllers:
-    users_controller:
+    users:
       success_message: "Welcome to the Sample App!"
       not_found_message: "This User Id does not exist!"
+    sessions:
+      login_error: "Invalid email/password combination"
   static_pages:
     home:
       title: "Home"
@@ -61,7 +70,6 @@ en:
       sentence1: "This is the homepage for the"
       book_title: "Ruby on Rails Tutorial"
       content1: "sample application."
-      signup: "Sign up now!"
     contact:
       title: "Contact"
       head: "Contact"
