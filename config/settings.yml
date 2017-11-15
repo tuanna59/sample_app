@@ -4,3 +4,5 @@ password:
   minimum_length: 6
 email:
   maximum_length: 255
+gravatar:
+  default_size: 80
