@@ -6,3 +6,5 @@ email:
   maximum_length: 255
 gravatar:
   default_size: 80
+remember_me:
+  checked: "1"

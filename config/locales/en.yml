@@ -99,3 +99,7 @@ en:
       head: "Sign up"
       confirmation: "Confirmation"
       submit_text: "Create my account"
+  sessions:
+    new:
+      remember_me: "Remember me on this computer"
+      new_user: "New user?"
