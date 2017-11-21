@@ -4,12 +4,16 @@ class SessionsController < ApplicationController
   def create
     @user = User.find_by email: params[:session][:email].downcase
     if @user && @user.authenticate(params[:session][:password])
-      log_in @user
-      params[:session][:remember_me] == Settings.remember_me.checked ? remember(@user) : forget(@user)
-      redirect_to @user
+      log_in_and_remember
     else
       flash_error
     end
+  end
+
+  def log_in_and_remember
+    log_in @user
+    params[:session][:remember_me] == Settings.remember_me.checked ? remember(@user) : forget(@user)
+    redirect_back_or @user
   end
 
   def flash_error
