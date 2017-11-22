@@ -61,6 +61,10 @@ en:
     users:
       success_message: "Welcome to the Sample App!"
       not_found_message: "This User Id does not exist!"
+      login_required_message: "Please log in."
+      delete_success_message: "User deleted"
+      delete_failed_message: "Failure! Can not delete."
+      profile_update_success_message: "Profile updated"
     sessions:
       login_error: "Invalid email/password combination"
   static_pages:
@@ -99,6 +103,19 @@ en:
       head: "Sign up"
       confirmation: "Confirmation"
       submit_text: "Create my account"
+    edit:
+      title: "Edit user"
+      head: "Update your profile"
+      save_changes: "Save changes"
+      change: "change"
+    index:
+      title: "All users"
+      head: "All users"
+    user:
+      confirm_delete_message: "You sure?"
+      delete_text: "delete"
+    form:
+      confirmation_text: "Confirmation"
   sessions:
     new:
       remember_me: "Remember me on this computer"
