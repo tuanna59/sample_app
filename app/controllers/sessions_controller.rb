@@ -4,10 +4,20 @@ class SessionsController < ApplicationController
   def create
     @user = User.find_by email: params[:session][:email].downcase
     if @user && @user.authenticate(params[:session][:password])
-      log_in_and_remember
+      if @user.activated?
+        log_in_and_remember
+      else
+        unactivated_account_process
+      end
     else
       flash_error
     end
+  end
+
+  def unactivated_account_process
+    message = t "controllers.sessions.activation_required_message"
+    flash[:warning] = message
+    redirect_to root_url
   end
 
   def log_in_and_remember

@@ -1,0 +1,4 @@
+<%= t "mailer.greeting", name: @user.name %>,
+<%= t "mailer.welcome_message" %>
+<%= t "mailer.activation_instruction" %>
+<%= edit_account_activation_url @user.activation_token, email: @user.email %>
