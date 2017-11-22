@@ -65,8 +65,14 @@ en:
       delete_success_message: "User deleted"
       delete_failed_message: "Failure! Can not delete."
       profile_update_success_message: "Profile updated"
+      activation_required_message: "Please check your email to activate your account."
+      unactivated_account_message: "This account is not activated yet."
     sessions:
       login_error: "Invalid email/password combination"
+      activation_required_message: "Account not activated. Check your email for the activation link."
+    account_activations:
+      activate_success_message: "Account activated!"
+      activate_failed_message: "Invalid activation link."
   static_pages:
     home:
       title: "Home"
@@ -120,3 +126,10 @@ en:
     new:
       remember_me: "Remember me on this computer"
       new_user: "New user?"
+  mailer:
+    head: "Sample App"
+    greeting: "Hi %{name}"
+    welcome_message: "Welcome to the Sample App!"
+    activation_instruction: "Click on the link below to activate your account:"
+    activate_text: "Activate"
+    subject: "Account activation"
