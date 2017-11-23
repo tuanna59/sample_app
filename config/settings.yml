@@ -9,3 +9,6 @@ gravatar:
   index_page_size: 50
 remember_me:
   checked: "1"
+time_zone: "Asia/Bangkok"
+password_reset:
+  maximum_time_expired: 2

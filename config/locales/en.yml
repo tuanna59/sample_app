@@ -73,6 +73,13 @@ en:
     account_activations:
       activate_success_message: "Account activated!"
       activate_failed_message: "Invalid activation link."
+    password_reset:
+      title: "Reset Password"
+      email_sent_message: "Email sent with password reset instructions"
+      email_not_found_message: "Email address not found"
+      password_blank_message: "can't be empty"
+      password_reset_successful: "Password has been reset."
+      password_reset_expired: "Password reset has expired."
   static_pages:
     home:
       title: "Home"
@@ -126,10 +133,24 @@ en:
     new:
       remember_me: "Remember me on this computer"
       new_user: "New user?"
+      forgot_password: "(forgot password)"
+  password_reset:
+    new:
+      title: "Forgot Password"
+      submit_text: "Submit"
+    edit:
+      title: "Reset password"
   mailer:
     head: "Sample App"
     greeting: "Hi %{name}"
     welcome_message: "Welcome to the Sample App!"
     activation_instruction: "Click on the link below to activate your account:"
     activate_text: "Activate"
-    subject: "Account activation"
+    account_activation_subject: "Account activation"
+    password_reset_text: "Reset password"
+    password_reset_subject: "Password reset"
+    password_reset_instruction: "To reset the password click the link below."
+    password_reset_expire_notify: "This link will expire in two hours."
+    password_reset_warning: "If you did not request your password to be reset, please ignore this email and password will stay as it is."
+    confirmation_text: "Confirmation"
+    update_password_text: "Update password"
