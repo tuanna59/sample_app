@@ -36,6 +36,10 @@ en:
   login: "Login"
   logout: "Logout"
   signup: "Sign up now!"
+  confirm_delete_message: "You sure?"
+  delete_text: "delete"
+  post_text: "Post"
+  micropost_feed: "Micropost Feed"
   layouts:
     header:
       app_title: "sample app"
@@ -67,6 +71,10 @@ en:
       profile_update_success_message: "Profile updated"
       activation_required_message: "Please check your email to activate your account."
       unactivated_account_message: "This account is not activated yet."
+    microposts:
+      post_success: "Micropost created!"
+      delete_success: "Micropost deleted"
+      delete_fail: "Can not delete"
     sessions:
       login_error: "Invalid email/password combination"
       activation_required_message: "Account not activated. Check your email for the activation link."
@@ -124,9 +132,6 @@ en:
     index:
       title: "All users"
       head: "All users"
-    user:
-      confirm_delete_message: "You sure?"
-      delete_text: "delete"
     form:
       confirmation_text: "Confirmation"
   sessions:
@@ -154,3 +159,8 @@ en:
     password_reset_warning: "If you did not request your password to be reset, please ignore this email and password will stay as it is."
     confirmation_text: "Confirmation"
     update_password_text: "Update password"
+  microposts:
+    micropost_text: "Microposts"
+    file_size_warnning: "should be less than 5MB"
+    placeholder: "Compose new micropost..."
+    limit_file_size_message: "Maximum file size is 5MB. Please choose a smaller file."

@@ -12,3 +12,10 @@ remember_me:
 time_zone: "Asia/Bangkok"
 password_reset:
   maximum_time_expired: 2
+micropost:
+  maximum_length: 140
+picture_upload:
+  maximum_size: 5
+  limit_width: 400
+  limit_height: 400
+  accept_filetype: "image/jpeg,image/gif,image/png"
