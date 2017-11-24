@@ -9,9 +9,12 @@ class UsersController < ApplicationController
   end
 
   def show
-    return if @user.activated?
-    flash[:info] = t "controllers.users.unactivated_account_message"
-    redirect_to root_url
+    if @user.activated?
+      @microposts = @user.microposts.paginate page: params[:page]
+    else
+      flash[:info] = t "controllers.users.unactivated_account_message"
+      redirect_to root_url
+    end
   end
 
   def new
@@ -54,13 +57,6 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit :name, :email, :password,
       :password_confirmation
-  end
-
-  def logged_in_user
-    return if logged_in?
-    store_location
-    flash[:danger] = t "controllers.users.login_required_message"
-    redirect_to login_url
   end
 
   def correct_user

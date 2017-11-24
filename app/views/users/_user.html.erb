@@ -3,8 +3,8 @@
     <%= gravatar_for user, size: Settings.gravatar.index_page_size %>
     <%= link_to user.name, user %>
     <% if current_user.admin? && !current_user?(user) %>
-      | <%= link_to t(".delete_text"), user, method: :delete,
-          data: {confirm: t(".confirm_delete_message")} %>
+      | <%= link_to t("delete_text"), user, method: :delete,
+          data: {confirm: t("confirm_delete_message")} %>
     <% end %>
   </li>
 <% end %>
