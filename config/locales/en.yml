@@ -40,6 +40,10 @@ en:
   delete_text: "delete"
   post_text: "Post"
   micropost_feed: "Micropost Feed"
+  following: "Following"
+  followers: "Followers"
+  follow: "Follow"
+  unfollow: "Unfollow"
   layouts:
     header:
       app_title: "sample app"
@@ -60,6 +64,8 @@ en:
     error_messages:
       sentence1: "The form contains"
       error: "error"
+    following: "following"
+    followers: "followers"
   helpers:
     application_helper:
       title: "Ruby on Rails Tutorial Sample App"

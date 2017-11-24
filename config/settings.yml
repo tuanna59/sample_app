@@ -7,6 +7,7 @@ email:
 gravatar:
   default_size: 80
   index_page_size: 50
+  follow_size: 30
 remember_me:
   checked: "1"
 time_zone: "Asia/Bangkok"

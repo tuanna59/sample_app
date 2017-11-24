@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   before_action :logged_in_user, except: %i(show new create)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
-  before_action :find_user, only: %i(show destroy)
+  before_action :find_user, only: %i(show destroy following followers)
 
   def index
     @users = User.activated.paginate page: params[:page]
@@ -50,6 +50,18 @@ class UsersController < ApplicationController
       flash[:danger] = t "controllers.users.delete_failed_message"
     end
     redirect_to users_url
+  end
+
+  def following
+    @title = t "following"
+    @users = @user.following.paginate page: params[:page]
+    render "show_follow"
+  end
+
+  def followers
+    @title = t "followers"
+    @users = @user.followers.paginate page: params[:page]
+    render "show_follow"
   end
 
   private
