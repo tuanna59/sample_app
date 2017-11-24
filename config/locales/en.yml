@@ -55,6 +55,8 @@ en:
       news: "News"
       sentence1: The %{book_title} by %{author}
   shared:
+    view_profile: "view my profile"
+    micropost: "micropost"
     error_messages:
       sentence1: "The form contains"
       error: "error"
@@ -164,3 +166,4 @@ en:
     file_size_warnning: "should be less than 5MB"
     placeholder: "Compose new micropost..."
     limit_file_size_message: "Maximum file size is 5MB. Please choose a smaller file."
+    posted_time: "Posted %{time}"

@@ -10,7 +10,7 @@ class UsersController < ApplicationController
 
   def show
     if @user.activated?
-      @microposts = @user.microposts.paginate page: params[:page]
+      @microposts = @user.microposts.ordered_by_date.paginate page: params[:page]
     else
       flash[:info] = t "controllers.users.unactivated_account_message"
       redirect_to root_url
