@@ -72,7 +72,7 @@ class User < ApplicationRecord
   end
 
   def feed
-    Micropost.by_user id
+    Micropost.ordered_by_date.by_user id
   end
 
   private
