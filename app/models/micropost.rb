@@ -5,7 +5,8 @@ class Micropost < ApplicationRecord
   validates :content, presence: true,
     length: {maximum: Settings.micropost.maximum_length}
   validate :picture_size
-  scope :by_user, ->(id){where("user_id = ?", id)}
+  scope :by_users,
+    ->(following_ids, id){where("user_id IN (?) OR user_id = ?", following_ids, id)}
   scope :ordered_by_date, ->{order created_at: :desc}
 
   private
